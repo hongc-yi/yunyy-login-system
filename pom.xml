@@ -34,5 +34,13 @@
 
   <build>
     <finalName>exp2.2</finalName>
+    <plugins>
+      <!-- 固定war打包插件版本，解决JDK高版本兼容问题 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
